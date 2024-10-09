@@ -1,0 +1,111 @@
+/**
+ * Tabs
+ */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+  max-width: 900px;
+}
+
+p {
+  max-width: 120ch;
+  color: #000;
+  font-size: 16px;
+  text-wrap: pretty;
+  line-height: inherit;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+
+.tabs label {
+  order: 1;
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background: #063a6b;
+  font-weight: bold;
+  transition: background ease 0.2s;
+  text-align: center;
+  flex: 1 1 auto; /* Allow labels to grow and shrink */
+}
+
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+}
+
+.tabs input[type="radio"] {
+  display: none;
+}
+
+.tabs input[type="radio"]:checked + label {
+  background: #fff;
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller laptops */
+@media (max-width: 1024px) {
+  .tabs label {
+    padding: 1rem 1rem; /* Adjust padding for smaller screens */
+    font-size: 1rem; /* Adjust font size */
+  }
+  .tabs {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .tabs {
+    flex-direction: column; /* Stack the tabs vertically on mobile */
+  }
+  
+  .tabs label {
+    width: 100%; /* Full width labels on mobile */
+    margin-bottom: 0.2rem; /* Add some space between labels */
+  }
+
+  .tabs input[type="radio"]:checked + label {
+    background: #fff;
+  }
+
+  .tabs .tab {
+    padding: 1rem;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  body {
+    font-size: 100%; /* Adjust font size for readability on smaller screens */
+    padding-top: 5vh;
+  }
+}
+
+/* Additional generic styling */
+body {
+  background: #fff;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-top: 10vh;
+  font-family: "Roboto", system-ui, ui-sans-serif, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 100%; /* Allow body to take up full width */
+  margin: 0 auto;
+  font-size: 18px;
+}

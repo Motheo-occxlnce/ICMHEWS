@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Your page description here">
+    <meta name="author" content="South African Weather Service">
+    <meta name="keywords" content="HTML, CSS, JavaScript, template">
+    
+    <title>Contact Us | ICMHEWS</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/head.css">
+	<link rel="stylesheet" href="css/contact.css">	
+
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- Font and Icon Libraries (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <nav class="navbar container">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand">
+        <img src="img/sawslogo.png" alt="Saws Logo">
+		<img src="img/goflogo.png" alt="GOF Logo">
+		<img src="img/icmhews.png" alt="icmhews>		
+		
+      </a>
+      <div class="burger" id="burger">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </div>
+    </div>
+    <div class="navbar-block" id="menu">
+      <ul class="menu">
+        <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+        <li class="menu-item dropdown">
+          <span class="dropdown-toggle menu-link">
+            About Us <i class="bx bx-chevron-down"></i>
+          </span>
+          <div class="dropdown-content">
+            <div class="dropdown-column">
+              <div class="dropdown-group">
+                <div class="dropdown-title">
+                  <span class="dropdown-icon"><i class="bx bx-code"></i></span>
+                  <span class="text-base font-medium"><a href="aboutus.html"> Organization & Project Overview </a></span>
+                </div>
+
+              </div>
+			  
+            </div>
+          </div>
+        </li>
+        <li class="menu-item dropdown">
+          <span class="dropdown-toggle menu-link">
+            Projects <i class="bx bx-chevron-down"></i>
+          </span>
+          <div class="dropdown-content">
+            <div class="dropdown-column">
+              <div class="dropdown-group">
+                <div class="dropdown-block">
+                  <span class="dropdown-icon"><i class="bx bx-podcast"></i></span>
+                  <div class="dropdown-inner">
+                    <a href="kzn.html" class="text-base font-medium">uMgungundlovu</a>
+                    <p class="text-base font-normal">
+                      KwaZulu-Natal
+                    </p>
+                  </div>
+                </div>
+                <div class="dropdown-block">
+                  <span class="dropdown-icon"><i class="bx bx-video"></i></span>
+                  <div class="dropdown-inner">
+                    <a href="limpopo.html" class="text-base font-medium">Vhembe</a>
+                    <p class="text-base font-normal">
+                      Limpopo
+                    </p>
+                  </div>
+                </div>
+				
+              </div>
+              <div class="dropdown-group">
+				<div class="dropdown-block">
+                  <span class="dropdown-icon"><i class="bx bx-video"></i></span>
+                  <div class="dropdown-inner">
+                    <a href="freestate.html" class="text-base font-medium">Lejweleputswa</a>
+                    <p class="text-base font-normal">
+                      Free State
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item"><a href="news.html" class="menu-link">News & Events</a></li>
+        <li class="menu-item"><a href="contact.html" class="menu-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<br>
+<br>
+<br>
+<br>
+    <div class="contact-container">
+        <div class="contact-innerwrap">
+
+            <section class="header-section clearfix">
+                <div class="text-center">
+                    <span class="sub-heading">Contact Us</span>
+                    <span class="separator"></span>
+                    <h1>Drop Us a Mail</h1>
+                </div>
+            </section>
+
+            <section class="content-section clearfix">
+                <div class="column-left first">
+                    <!-- Google Maps Integration -->
+                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                    <div class="map-container" style='overflow:hidden;height:550px;width:100%;'>
+                        <div id='gmap_canvas' style='height:100%;width:100%;'></div>
+                        <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+                    </div>
+                    <script type='text/javascript'>
+                        function init_map(){
+                            var myOptions = {
+                                zoom:14,
+                                center:new google.maps.LatLng(-25.746111,28.188056),
+                                mapTypeId: google.maps.MapTypeId.ROADMAP
+                            };
+                            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                            marker = new google.maps.Marker({
+                                map: map,
+                                position: new google.maps.LatLng(-25.746111,28.188056)
+                            });
+                            infowindow = new google.maps.InfoWindow({
+                                content:'<strong>South African Weather Service</strong><br>Centurion Office Park, Baywest Road, Centurion, Gauteng, South Africa'
+                            });
+                            google.maps.event.addListener(marker, 'click', function(){
+                                infowindow.open(map,marker);
+                            });
+                            infowindow.open(map,marker);
+                        }
+                        google.maps.event.addDomListener(window, 'load', init_map);
+                    </script>
+                </div>
+                <div class="column-right last">
+                    <div class="address-container">
+                        <div class="address-details">
+                            <p>Ground Floor, Centurion Office Park, Baywest Road, Centurion, 0157, Gauteng, South Africa</p>
+                            <p><span class="label">Phone :</span> +27 12 383 3333</p>
+                            <p><span class="label">Email :</span> info@saws.co.za</p>
+                            <p><span class="label">Fax :</span> +27 12 383 3334</p>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3 class="form-title">Want to Know More? Drop Us a Mail</h3>
+                        <form action="">
+                            <div class="clearfix">
+                                <input class="input-field first" type="text" placeholder="First Name" required>
+                                <input class="input-field last" type="text" placeholder="Last Name" required>
+                            </div>
+                            <div class="clearfix">
+                                <input class="input-field first" type="email" placeholder="Email" required>
+                                <input class="input-field last" type="text" placeholder="Contact Number" required>
+                            </div>
+                            <div class="clearfix">
+                                <textarea name="message" cols="30" rows="7" placeholder="Your message here..." required></textarea>
+                            </div>
+                            <div class="clearfix">
+                                <input type="submit" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <!-- External JavaScript file -->
+    <script src="js/script.js"></script>
+    <script src="js/logos.js"></script>	
+
+	
+</body>
+</html>

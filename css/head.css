@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Roboto", system-ui, ui-sans-serif, sans-serif;
+}
+
+.mountain-container {
+  text-align: center;
+  color: #000;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/weather1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #063a6b;
+  padding-top: 12rem;
+  padding-bottom: 2rem;
+}
+
+.aboutsaws {
+	color: #fff;
+	padding-bottom: 2rem;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 2.3rem;
+  color: #063a6b;
+}
+
+p {
+  max-width: 120ch;
+  line-height: 1.5;
+  padding: 1em;
+}
+
+.button {
+  display: inline-block;
+  padding: 1em 3.5em;
+  background-color: #063a6b;
+  color: white;
+  border: 3px solid #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: .875rem;
+  margin-bottom: 5rem;
+}
+
+.button:hover {
+  display: inline-block;
+  padding: 1em 3.5em;
+  background-color: #008641;
+  color: white;
+  border: 3px solid #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: .875rem;
+  margin-bottom: 5rem;
+}
+
+
+.mountain-blank,
+.mountain-other {
+  width: 100%;
+  min-height: 60vh;
+  background-color: #063a6b;
+}
+
+.mountain-second {
+  background-image: url('../img/weather1.jpg');
+  background-attachment: fixed;
+  height: 1200px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 1em;
+}
+
+.mountain-card > a {
+  margin-bottom: 2em;
+}
+
+.mountain-item {
+  display: flex;
+  max-width: 320px;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  border-radius: .5em;
+  -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+}
+
+.mountain-img {
+  width: 90%;
+  height: 200px;
+  background-color: lightgrey;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  border-radius: .3em;
+}
+
+.mountain-img-first {
+  background-image: url("../img/kzndistrict.png");
+}
+
+.mountain-img-second {
+  background-image: url("../img/vhembedistrict.png");
+}
+
+.mountain-img-third {
+  background-image: url("../img/freestatedistrict.png");
+}
+
+.mountain-second {
+  flex-direction: row;
+  gap: 1.6em;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+.button {
+  display: inline-block;
+  padding: 1em 3.5em;
+  background-color: #063a6b;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: .875rem;
+  margin-bottom: 10rem;
+}
+	
+	
+  .mountain-second {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mountain-item {
+    max-width: 90%; /* Make the cards wider on small screens */
+  }
+}

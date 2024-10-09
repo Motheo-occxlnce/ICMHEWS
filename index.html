@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Your page description here">
+    <meta name="author" content="South African Weather Service">
+    <meta name="keywords" content="HTML, CSS, JavaScript, template">
+    
+    <title>ICMHEWS</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/head.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- Font and Icon Libraries (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <nav class="navbar container">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand">
+        <img src="img/sawslogo.png" alt="Saws Logo">
+		<img src="img/goflogo.png" alt="GOF Logo">
+		<img src="img/icmhews.png" alt="icmhews>		
+		
+      </a>
+      <div class="burger" id="burger">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </div>
+    </div>
+    <div class="navbar-block" id="menu">
+      <ul class="menu">
+        <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+        <li class="menu-item dropdown">
+          <span class="dropdown-toggle menu-link">
+            About Us <i class="bx bx-chevron-down"></i>
+          </span>
+          <div class="dropdown-content">
+            <div class="dropdown-column">
+              <div class="dropdown-group">
+                <div class="dropdown-title">
+                  <span class="dropdown-icon"><i class="bx bx-code"></i></span>
+                  <span class="text-base font-medium"><a href="aboutus.html"> Organization & Project Overview </a></span>
+                </div>
+
+              </div>
+			  
+            </div>
+          </div>
+        </li>
+        <li class="menu-item dropdown">
+          <span class="dropdown-toggle menu-link">
+            Projects <i class="bx bx-chevron-down"></i>
+          </span>
+          <div class="dropdown-content">
+            <div class="dropdown-column">
+              <div class="dropdown-group">
+                <div class="dropdown-block">
+                  <span class="dropdown-icon"><i class="bx bx-podcast"></i></span>
+                  <div class="dropdown-inner">
+                    <a href="kzn.html" class="text-base font-medium">uMgungundlovu</a>
+                    <p class="text-base font-normal">
+                      KwaZulu-Natal
+                    </p>
+                  </div>
+                </div>
+                <div class="dropdown-block">
+                  <span class="dropdown-icon"><i class="bx bx-video"></i></span>
+                  <div class="dropdown-inner">
+                    <a href="limpopo.html" class="text-base font-medium">Vhembe</a>
+                    <p class="text-base font-normal">
+                      Limpopo
+                    </p>
+                  </div>
+                </div>
+				
+              </div>
+              <div class="dropdown-group">
+				<div class="dropdown-block">
+                  <span class="dropdown-icon"><i class="bx bx-video"></i></span>
+                  <div class="dropdown-inner">
+                    <a href="freestate.html" class="text-base font-medium">Lejweleputswa</a>
+                    <p class="text-base font-normal">
+                      Free State
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item"><a href="news.html" class="menu-link">News & Events</a></li>
+        <li class="menu-item"><a href="contact.html" class="menu-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="mountain-container">
+  <h1 class="aboutsaws">Integrated Climate-Driven Multi-Hazard Early Warning System</h1>
+  <b>
+  <p class="aboutsaws">The South African Weather Service (SAWS) implemented the Integrated Climate-Driven Multi-Hazard Early Warning System (ICMHEWS) project in uMgungundlovu, Vhembe and Lejweleputswa district municipalities in KwaZulu Natal, Limpopo and Free State provinces. The project aims to develop an integrated, climate-driven multi-hazard early warning system for the identified local climate and hydrometeorological risks and hazards such as drought, lightning, and flooding, among others.</p>
+	</b>
+  
+  <a href="aboutus.html" class="button">Learn more</a>
+</div>
+
+
+<div class="mountain-container mountain-second">
+<h2 class="aboutsaws">District Projects</h2>
+  <div class="mountain-item">
+    <div class="mountain-img mountain-img-first"></div>
+    <div class="mountain-card">
+      <h3>uMgungundlovu District (KwaZulu-Natal)</h3>
+      
+      <a href="kzn.html">Learn more</a>
+    </div>
+  </div>
+  <div class="mountain-item">
+    <div class="mountain-img mountain-img-second"></div>
+    <div class="mountain-card">
+      <h3>Vhembe District (Limpopo)</h3>
+      
+      <a href="limpopo.html">Learn more</a>
+    </div>
+  </div>
+  <div class="mountain-item">
+    <div class="mountain-img mountain-img-third"></div>
+    <div class="mountain-card">
+      <h3>Lejweleputswa District (Free State)</h3>
+      
+      <a href="freestate.html">Learn more</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <!-- External JavaScript file -->
+    <script src="js/script.js"></script>
+    <script src="js/logos.js"></script>	
+
+	
+</body>
+</html>

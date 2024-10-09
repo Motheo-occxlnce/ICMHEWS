@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", system-ui, ui-sans-serif, sans-serif;
+}
+
+section:first-child{
+  position: relative;
+  height:100px;
+}
+
+section .title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top:-35.5px;
+  margin-left: -91.4px;
+  font-family: "Roboto", system-ui, ui-sans-serif, sans-serif;
+  letter-spacing: 10px;
+}
+
+.title h1,h2{
+  font-family: "Roboto", system-ui, ui-sans-serif, sans-serif;
+  font-size:3rem; 
+  font-weight:400; 
+  text-transform: uppercase;
+  
+}
+.title h2{
+  font-size:20px;
+  font-weight:100;
+  letter-spacing: 5px;
+  margin-left: 13px;
+}
+.p-one{
+ background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/weather1.jpg');
+}
+.p-two{
+ background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/weather1.jpg');
+}
+.p-three{
+ background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/weather1.jpg');
+}
+.p-four{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/weather1.jpg');
+}
+.parallax-inner{
+  position:relative;
+  min-height: 500px;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.parallax-inner > h2{
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -20.5px;
+  width: 100%;
+  text-align: center;
+}
+
+p {
+  max-width: 160ch;
+  color: #000;
+  font-size: 16px;
+  text-wrap: pretty;
+  line-height: inherit;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+.first-letter{
+  float: left;
+  font-weight: 400;
+  font-size: 84px;
+  line-height: 64px;
+  padding-top: 2px;
+  padding-right: 8px;
+  padding-left: 4px;
+}
+
+.line-break{
+  border-bottom: 1px solid #008641;
+  width: 200px;
+  margin: 0 auto;
+}
+.red{
+  color: #5e5a58;
+}
+.darkgreen{
+  color:#008641;
+}
+.green{
+  color:#008641;
+}
+.skyblue{
+  color: #063a6b;
+}
+
+
+/* media queries */
+@media screen and (max-width:500px){
+  .parallax-inner{
+    min-height: 350px;
+    background-size: cover;
+  }
+
+
+}
