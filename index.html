@@ -13,6 +13,50 @@
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/head.css">
+	
+    <!-- Our partners logo styling -->	
+	<style>
+	.logos-with-captions {
+  background-color: #fff;
+}
+
+.logos-with-captions h2 {
+  font-family: "Roboto", system-ui, ui-sans-serif, sans-serif;
+  font-weight: 700;
+  color: #063a6b;
+}
+
+.logo-card {
+  background-color: #fff;
+  border-radius: 0.3rem;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.logo-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.logo-card img {
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.logo-card h3 {
+  font-family: "Roboto", system-ui, ui-sans-serif, sans-serif;
+  font-weight: 600;
+  color: #008641;
+  margin-bottom: 10px;
+}
+
+.logo-card p {
+  font-family: "Roboto", system-ui, ui-sans-serif, sans-serif;
+  color: #008641;
+  font-size: 16px;
+}
+	
+	</style>
 
     <!-- Favicon -->
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
@@ -26,9 +70,7 @@
   <nav class="navbar container">
     <div class="navbar-inner">
       <a href="index.html" class="brand">
-        <img src="img/sawslogo.png" alt="Saws Logo">
-		<img src="img/goflogo.png" alt="GOF Logo">
-		<img src="img/icmhews.png" alt="icmhews>		
+        <img src="img/sawslogo.png" alt="Saws Logo">		
 		
       </a>
       <div class="burger" id="burger">
@@ -115,6 +157,38 @@
   <a href="aboutus.html" class="button">Learn more</a>
 </div>
 
+<br>
+<br>
+<br>
+<br>
+
+<section class="logos-with-captions py-5">
+  <div class="container">
+
+	<br>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="logo-card">
+          <img src="img/goflogo.png" alt="Company 1" class="img-fluid mb-3">
+
+        </div>
+      </div>
+	  <br>
+      <div class="col">
+        <div class="logo-card">
+          <img src="img/icm.png" alt="Company 2" class="img-fluid mb-3">
+
+        </div>
+      </div>
+      <!-- Add more logo cards as needed -->
+    </div>
+  </div>
+</section> 
+
+<br>
+<br>
+<br>
+<br>
 
 <div class="mountain-container mountain-second">
 <h2 class="aboutsaws">District Projects</h2>
